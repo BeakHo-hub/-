@@ -34,8 +34,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
+  --bs-primary: #FFD700;
+  --bs-secondary: #191970;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -54,7 +54,13 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-body-font-family: "Noto Sans KR", "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  /* 새로운 설정 (한글 글꼴을 가장 앞에 추가) */
+  h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  /* Montserrat 앞에 Noto Sans KR을 추가 */
+  font-family: "Noto Sans KR", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --bs-font-sans-serif: "Noto Sans KR", "Nanum Gothic", "Montserrat", -apple-system, BlinkMacMacFont, "Segoe UI", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -3821,8 +3827,8 @@ textarea.form-control-lg {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  color: var(--bs-navbar-color);
-  background-color: transparent;
+  color: var(--bs-secondary) !important; 
+  background-color: var(--bs-primary) !important;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
@@ -10907,13 +10913,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: var(--bs-primary); /* #FFD700 */
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: var(--bs-primary);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10934,8 +10940,8 @@ html {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
+    color: #fff; /* 텍스트는 흰색 유지 */
+    background: var(--bs-primary); /* #FFD700 */
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
@@ -10970,6 +10976,7 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  background-color: var(--bs-secondary) !important;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10980,6 +10987,7 @@ html {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  border: 0.5rem solid #FFD700;
 }
 
 @media (min-width: 992px) {
@@ -11009,13 +11017,14 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+   background-color: rgba(255, 215, 0, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
+  color: var(--bs-secondary);
 }
 
 .portfolio-modal .btn-close {
@@ -11043,4 +11052,64 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+/* ========================================================== */
+/* 달토끼 테마: 포트폴리오 섹션 전용 스타일 (추석 색상) */
+/* ========================================================== */
+
+/* 1. 포트폴리오 섹션 배경색: 옅은 아이보리/쑥색 (#F8F8FF) */
+.portfolio {
+    background-color: #F8F8FF; /* 아주 옅은 색상으로, 흰색보다 따뜻한 느낌을 줍니다. */
+}
+
+/* 2. 포트폴리오 제목 구분선 및 아이콘: 추석 붉은 계열 (#800000) */
+/* 이 색상은 대비를 주어 포인트를 살립니다. */
+.portfolio .divider-custom .divider-custom-line {
+    background-color: #800000 !important;
+    border-color: #800000 !important;
+}
+
+.portfolio .divider-custom .divider-custom-icon {
+    color: #800000 !important;
+}
+
+/* 3. 포트폴리오 아이템 호버 오버레이: 달빛 옐로우 */
+/* (이전에 설정한 --bs-secondary (밤하늘색)과의 대비를 위해 흰색을 사용합니다.) */
+.portfolio .portfolio-item .portfolio-item-caption {
+    /* 달빛 옐로우(FFD700)를 투명하게 적용 */
+    background-color: rgba(255, 215, 0, 0.8) !important; 
+}
+
+/* 오버레이 내부 아이콘 색상: 깊은 밤 남색 (변수 사용) */
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    color: var(--bs-secondary) !important; 
+}
+/* ========================================================== */
+/* 달토끼 테마: 모바일 'Menu' 버튼 색상 변경 */
+/* ========================================================== */
+
+/* Menu 버튼 (navbar-toggler)의 스타일을 덮어쓰기 */
+.navbar-toggler {
+    /* 배경색을 달빛(Primary) 색상으로 변경 */
+    background-color: var(--bs-primary) !important; 
+    
+    /* 버튼 내부 텍스트('Menu')와 아이콘(fas fa-bars) 색상 변경 */
+    /* 깊은 밤 남색(Secondary)으로 설정하여 달빛 배경과 대비를 줍니다. */
+    color: var(--bs-secondary) !important; 
+    
+    /* 테두리 색상도 달빛으로 변경 */
+    border-color: var(--bs-primary) !important; 
+}
+/* ========================================================== */
+/* 달토끼 테마: Send 버튼 텍스트 색상 명확화 */
+/* ========================================================== */
+
+/* Send 버튼의 텍스트와 아이콘 색상을 밤하늘색으로 강제 적용하여 대비를 높입니다. */
+#submitButton {
+    color: var(--bs-secondary) !important; 
+}
+
+/* 버튼에 마우스를 올렸을 때도 텍스트가 잘 보이도록 설정 */
+#submitButton:hover {
+    color: var(--bs-secondary) !important; 
 }

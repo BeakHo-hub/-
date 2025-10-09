@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.fonts.google.com/specimen/Noto+Sans+KR?subset=korean#standard-styles" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -38,7 +41,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="assets/img/달토끼 아바타.png" alt="달토끼 아바타" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">안녕하세요? 전 달토끼에요</h1>
                 <!-- Icon Divider-->
@@ -122,29 +125,32 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
+      <section class="page-section bg-secondary text-white mb-0" id="about">
+        <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">달토끼 경력기술서</h2>
+        
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-moon"></i></div> <div class="divider-custom-line"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 ms-auto">
+                <p class="lead">
+                    저는 '500년 경력의 떡 장토'입니다. 제 주 업무는 우주에서 가장 귀한 재료를 공수해 
+                    '온 세상의 평안을 기원하는 송편'을 빚는 것입니다. 저의 노련함은 밤하늘의 별처럼 빛납니다.
+                </p>
             </div>
+            <div class="col-lg-4 me-auto">
+                <p class="lead">
+                    주요 스킬은 '정교한 절구질 기술'과 '보름달 찹쌀 선별'입니다. 
+                    혹시 명절에 딱딱한 송편에 실망하셨다면, 저의 솜씨로 빚은 송편을 맛보셔야 합니다. 
+                    '지금 바로 저에게 연락하세요!'
+                </p>
+            </div>
+        </div>
+        
+        </div>
         </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
@@ -172,7 +178,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">이름을 써주세요</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">달토끼는 누가 보냈는지 알아야해요!.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
@@ -184,7 +190,7 @@
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">맞아요 번따, 그러니까 번호주세요</label>
+                                <label for="phone"> 번호를 적어주세요</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">번따하는 중임</div>
                             </div>
                             <!-- Message input-->
@@ -199,8 +205,8 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <div class="fw-bolder">송편 주문 접수 완료!</div>
+                                    <p class="mb-0">달토끼가 주문서를 확인하는 중이에요. 밤새 정성껏 빚어 답장 드릴게요!</p>
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
@@ -211,7 +217,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                           <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">송편 주문 보내기 <i class="fas fa-paper-plane"></i></button>
                         </form>
                     </div>
                 </div>
@@ -219,17 +225,14 @@
         </section>
         <!-- Footer-->
         <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">달토끼의 위치</h4>
+                <p class="lead mb-0">
+                 **우주 계수나무 아래**
+                <br />
+                **보름달, 달나라 1024동**
+                </p>
+                </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
@@ -240,13 +243,13 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
+            <h4 class="text-uppercase mb-4">달토끼의 마지막 인사</h4>
+            <p class="lead mb-0">
+            방문해 주셔서 감사합니다! <br class="d-none d-lg-block"/>
+            보름달이 가져다주는 풍요로움처럼, 
+            당신의 삶도 행복한 일들로 가득 차기를 기원합니다!
+            </p>
+            </div>
                 </div>
             </div>
         </footer>
@@ -265,7 +268,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">달토끼 만월 송편</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -273,9 +276,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/oktokki_fullmoon.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">이것은 제가 심혈을 기울여 만든 달토끼표 만월 송편이랍니다! 달콤~한 맛이 일품이죠!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -297,7 +300,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">월계수 불사 송편</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -305,9 +308,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/elixir_laurel.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">월계수 불사 송편은 정말 귀한거에요! 월계수 잎을 저만의 독특한 방법으로 갈아내어 정제하고, 그걸 앙금으로 하여 만들어낸답니다! </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -329,7 +332,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">별똥별 호박 송편</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -337,9 +340,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/meteor_pumpkin.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">이 송편은 약간 매우실지도 몰라요! 송편이 맵다는 건 상상하기 힘드시겠지만 약간으 매콤함과 호박의 달콤함이 잘 어우러진 송편이랍니다!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -361,7 +364,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">만병통치물약</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -369,9 +372,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/medison.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">이건 정말 아픈분에게 먹인다면 그 병의 싹 낫는 만병통치약이에요! 하지만 너무 귀한거라 저도 100년에 하나 만들수 있답니다</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -393,7 +396,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">월광 절구</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -401,9 +404,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/stick.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">앞선 저의 식료품들은 모두 이 절구를 통해 만든답니다! 수제 제작하여 적절한 달의 마력이 깃든 이 절구로 만든 송편은 맛이 없을 수 없죠!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -425,7 +428,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">달 조각 조형물</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -433,9 +436,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/moon.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">이건 가끔 일하다보면 달조각이 떠다니는데, 약간의 마력을 품고있어 은은히 빛나는게 너무 예뻐서 제작한 조각상이에요! 정말 예쁘니까 집에 놔두시면 분위기가 확 살거랍니다!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
